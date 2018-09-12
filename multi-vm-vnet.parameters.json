@@ -10,6 +10,14 @@
             "secretName": "vmPassword"
           }
     },
+    "virtualMachineAdminUser": {
+        "reference": {
+            "keyVault": {
+              "id": "/subscriptions/8c7412ff-48ec-4a86-a284-c4483ba2d039/resourceGroups/SubMgmt-DONOTDELETE/providers/Microsoft.KeyVault/vaults/rspitzsubkv"
+            },
+            "secretName": "vmAdminUser"
+          }
+    },
     "virtualMachineCount": {
       "value": 3
     },

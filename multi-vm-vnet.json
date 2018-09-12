@@ -8,6 +8,12 @@
         "description": "Administrator password for the local admin account"
       }
     },
+    "virtualMachineAdminUser": {
+        "type": "securestring",
+        "metadata": {
+          "description": "Administrator username for the local admin account"
+        }
+      },
     "virtualMachineCount": {
       "type": "int",
       "defaultValue": 3,
@@ -33,7 +39,7 @@
     "osSubstring": "[substring(parameters('operatingSystem'), 0, 1)]",
     "dnsPrefixForPublicIP": "[concat('rspitz', uniqueString(resourceGroup().id, deployment().name))]",
     "virtualMachineNamePrefix": "VM0",
-    "virtualMachineAdminUserName": "richard",
+    "virtualMachineAdminUserName": "[parameters('virtualMachineAdminUser')]",
     "virtualMachineSize": "Standard_D4s_v3",
     "myVNETName": "myVNET",
     "myVNETPrefix": "10.0.0.0/16",
