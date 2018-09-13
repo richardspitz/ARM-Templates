@@ -5,7 +5,7 @@
     "virtualMachineAdminUser": {
         "type": "securestring",
         "metadata": {
-          "description": "Administrator username for the local admin account"
+          "description": "Administrator user name for the local admin account"
         }
       },
       "virtualMachineAdminPassword": {
